@@ -1,0 +1,169 @@
+body {
+
+    width: 100vw;
+    height: 100vh;
+
+    display: grid;
+    grid-template-columns: 1fr 5fr 1fr;
+    grid-template-rows: 1fr 12fr 1fr;
+    margin: 0;
+    padding: 0;
+
+}
+
+header {
+
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 2;
+    grid-column-end: 3;
+
+    height: 5em;
+    /* background-color: lightskyblue; */
+
+}
+
+.header {
+
+    margin-left: calc(50% - 0.5em);
+    margin-top: 0em;
+    width: 3em;
+    height: 3em;
+    background-color: lightgreen;
+    border-radius: 2em;
+    transition: all 0.5s;
+    
+}
+
+.header:hover {
+
+    margin-top: 0em;
+    margin-left: 5em;
+    width: calc(100% - 10em);
+    height: 3em;
+    border-radius: 0em 0em 1em 1em;
+
+}
+
+.headerContent {
+
+    height: 0.5em;
+    transition: height 0.5s;
+    visibility: hidden;
+
+}
+
+.header:hover .headerContent {
+
+    height: 3em;
+    transform: scale(0.8);
+    border-radius: 2em;
+    visibility: visible;
+}
+
+main {
+
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 2;
+    grid-column-end: 3;
+
+    /* background-color: gold; */
+    margin: 0px 0px 3em 0px;
+    padding: 0;
+}
+
+/* BUG DISPLAY */
+
+div.bug {
+
+    display: grid;
+
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 5fr 1fr;
+
+    width: 30vw;
+    height: 40vh;
+
+    margin-top: 5%;
+    margin-left: calc(50% - 15em);
+
+    border: solid 0.1em gray;
+    background-color: rgb(199, 199, 199);
+    border-radius: 1em;
+    transition: border 0.15s;
+    /* background-color: red; */
+
+}
+
+div.bug:hover {
+
+    border: solid 0.2em gray;
+
+}
+
+div.bug p {
+
+    margin: 1em 0.5em 1em 0.5em;
+    border-style: none none solid none;
+    border-width: 0.1em;
+    border-color: lightgray;
+
+}
+
+div.bug .bugName {
+
+    grid-row-start: 1;
+    grid-row-end: 2;
+
+}
+
+div.bug .bugDescription {
+
+    grid-row-start: 2;
+    grid-row-end: 3;
+
+}
+
+div.bug .bugDate {
+
+    grid-row-start: 3;
+    grid-row-end: 4;
+
+}
+
+#leftSide {
+
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 2;
+
+    /* background-color: peru; */
+
+}
+
+#rightSide {
+
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 3;
+    grid-column-end: 4;
+    /* background-color: lightpink; */
+
+}
+
+footer {
+
+    grid-row-start: 3;
+    grid-row-end: 4;
+    grid-column-start: 2;
+    grid-column-end: 3;
+
+    width: 100%;
+    height: 5em;
+
+    /* background-color: lightsalmon; */
+
+}
+
