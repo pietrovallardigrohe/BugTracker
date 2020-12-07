@@ -40,6 +40,6 @@ function displayBug(bug) {
     bugDiv.appendChild(bugDescription)
     bugDiv.appendChild(bugDate)
 
-    document.body.getElementsByTagName('main')[0].insertBefore(bugDiv, document.getElementById('_'))
+    document.body.getElementsByTagName('main')[0].appendChild(bugDiv)
 
 }

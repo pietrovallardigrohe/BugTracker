@@ -1,0 +1,58 @@
+/* BUG DISPLAY */
+
+div.bug {
+
+    display: grid;
+
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 5fr 1fr;
+
+    width: 30vw;
+    height: 40vh;
+
+    margin-top: 5%;
+    margin-left: calc(50% - 15em);
+
+    border: solid 0.1em gray;
+    background-color: rgb(199, 199, 199);
+    border-radius: 1em;
+    transition: border 0.15s;
+    /* background-color: red; */
+
+}
+
+div.bug:hover {
+
+    border: solid 0.2em gray;
+
+}
+
+div.bug p {
+
+    margin: 1em 0.5em 1em 0.5em;
+    border-style: none none solid none;
+    border-width: 0.1em;
+    border-color: lightgray;
+
+}
+
+div.bug .bugName {
+
+    grid-row-start: 1;
+    grid-row-end: 2;
+
+}
+
+div.bug .bugDescription {
+
+    grid-row-start: 2;
+    grid-row-end: 3;
+
+}
+
+div.bug .bugDate {
+
+    grid-row-start: 3;
+    grid-row-end: 4;
+
+}
