@@ -3,3 +3,39 @@ div#loginForm {
 
     
 }
+
+form#loginForm {
+
+    position: relative;
+    background: radial-gradient(circle, rgba(217,217,217,1) 100%, rgba(140,140,140,1) 100%, rgba(140,140,140,1) 100%, rgba(140,140,140,1) 100%, rgba(140,140,140,1) 157%, rgba(140,140,140,1) 168%);
+
+    width: fit-content;
+    height: fit-content;
+
+    margin-top: 20%;
+    margin-left: calc(50% - 8em);
+
+    padding: 3em;
+    border-radius: .5em;
+
+}
+
+form#loginForm #submitButton {
+
+    margin: 2em 0 -0.5em 55%;
+
+    width: 6em;
+    height: 2em;
+
+    background-color: #b3bdaf;
+    border: #fff;
+    border-radius: 1em;
+
+
+}
+
+form#loginForm #submitButton:hover {
+
+    background: radial-gradient(circle, rgba(165,171,163,1) 99%, rgba(186,194,183,1) 100%, rgba(217,217,217,1) 100%, rgba(217,217,217,1) 100%);
+
+}
