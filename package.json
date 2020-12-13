@@ -18,5 +18,8 @@
   "homepage": "https://github.com/pietrovallardigrohe/BugTracker#readme",
   "devDependencies": {
     "nodemon": "^2.0.6"
+  },
+  "dependencies": {
+    "bcrypt": "^5.0.0"
   }
 }

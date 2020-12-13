@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/login.css">
     <script src="../js/login.js"></script>
+    <script src="../../dependencies/sjcl.js"></script>
 
 </head>
 
@@ -25,14 +26,17 @@
     </header>
 
     <main>
-
         
-        <form action="" method="POST" id="loginForm">
-            <label for="username">Login:</label> <br/>
+        <form action="javascript:submit();" method="post" id="loginForm">
+
+            <label for="username">Usuário:</label> <br/>
             <input type="text" name="username" id="username" required> <br/> <br/>
-            <label for="password">Password:</label> <br/> 
+
+            <label for="password">Senha:</label> <br/> 
             <input type="password" name="password" id="password" required> <br/>
-            <input type="submit" id="submitButton"></button>
+
+            <input type="submit" id="submitButton"></input>
+
         </form>
         
 
